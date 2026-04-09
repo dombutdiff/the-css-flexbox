@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    div > div {
+      display: grid;
+      place-content: center;
+    }
+
+    .container {
+      margin-bottom: 40px;
+    }
+
+    .first {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .second {
+      display: flex;
+      justify-content: center;
+      /* align-items: start; */
+    }
+  </style>
+</head>
+<body>
+  <p>first</p>
+  <div class="first container">
+    <div style="width: 100%;  background-color: lightblue;">width 100%</div>
+    <div style="width: 100%; height: 200px; background-color: lightcoral;">width 100%, height 200px</div>
+    <div style="width: 200px; height: 200px; background-color: lightgreen;">200px</div>
+    <div style="flex: 1; background-color: rgb(214, 214, 49);">flex 1</div>
+  </div>
+
+  <p>second</p>
+  <div class="second container">
+    <div style="width: 200px; height: 200px; background-color: lightblue;">200px</div>
+    <div style="width: 200px; height: 200px; background-color: lightcoral;">200px</div>
+    <div style="flex: 1; height: 200px; background-color: lightgreen;">flex 1</div>
+    <div style="flex: 2; background-color: rgb(214, 214, 49);">flex 2</div>
+  </div>
+</body>
+</html>
